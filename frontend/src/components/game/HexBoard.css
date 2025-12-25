@@ -1,0 +1,101 @@
+.hex-board {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  aspect-ratio: 4/3;
+}
+
+.hex-tile {
+  transition: all var(--transition-fast);
+  cursor: default;
+}
+
+.hex-tile:hover {
+  filter: brightness(1.1);
+}
+
+.hex-resource {
+  pointer-events: none;
+}
+
+.number-token circle {
+  transition: all var(--transition-fast);
+}
+
+.hex-group:hover .number-token circle {
+  transform: scale(1.1);
+}
+
+.number-text {
+  font-family: var(--font-display);
+  font-size: 16px;
+  font-weight: 700;
+  fill: #2d261f;
+}
+
+.number-text.hot {
+  fill: #8b0000;
+  font-size: 18px;
+}
+
+.probability-dots {
+  font-size: 8px;
+  fill: #2d261f;
+  opacity: 0.6;
+}
+
+.conquistador-overlay {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.conquistador-icon {
+  animation: float 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-3px); }
+}
+
+/* Roads */
+.road {
+  filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.edge-hitbox {
+  cursor: pointer;
+}
+
+.edge-hitbox:hover + .road,
+.edge-hitbox:hover {
+  stroke: rgba(212, 168, 75, 0.5);
+  stroke-width: 8;
+}
+
+/* Buildings */
+.bohio, .templo {
+  filter: drop-shadow(2px 3px 3px rgba(0, 0, 0, 0.4));
+  transition: transform var(--transition-fast);
+}
+
+.bohio:hover, .templo:hover {
+  transform: scale(1.1);
+}
+
+/* Build spots */
+.build-spot {
+  cursor: pointer;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.build-spot:hover {
+  stroke: var(--color-gold-bright);
+  stroke-width: 3;
+}
+
+/* Port */
+.port-indicator {
+  font-size: 16px;
+  opacity: 0.8;
+}
+

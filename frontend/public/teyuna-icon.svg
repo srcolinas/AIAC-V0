@@ -1,0 +1,43 @@
+<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer hexagon - representing the Sierra Nevada mountains -->
+  <path 
+    d="M32 4L58 18V46L32 60L6 46V18L32 4Z" 
+    fill="#1a1612"
+    stroke="#d4a84b" 
+    stroke-width="2"
+  />
+  
+  <!-- Inner hexagon - representing Teyuna terraces -->
+  <path 
+    d="M32 14L48 24V40L32 50L16 40V24L32 14Z" 
+    fill="#2d261f"
+    stroke="#d4a84b" 
+    stroke-width="1.5"
+    opacity="0.8"
+  />
+  
+  <!-- Central circle - representing the ceremonial center -->
+  <circle 
+    cx="32" 
+    cy="32" 
+    r="8" 
+    fill="#d4a84b"
+  />
+  
+  <!-- Inner pattern - Tayrona-inspired sun symbol -->
+  <circle 
+    cx="32" 
+    cy="32" 
+    r="4" 
+    fill="#1a1612"
+  />
+  
+  <!-- Sun rays -->
+  <g stroke="#d4a84b" stroke-width="1.5">
+    <line x1="32" y1="20" x2="32" y2="24"/>
+    <line x1="32" y1="40" x2="32" y2="44"/>
+    <line x1="20" y1="32" x2="24" y2="32"/>
+    <line x1="40" y1="32" x2="44" y2="32"/>
+  </g>
+</svg>
+

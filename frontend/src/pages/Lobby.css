@@ -1,0 +1,316 @@
+.lobby-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-xl);
+}
+
+.lobby-header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.lobby-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: var(--space-sm);
+}
+
+.lobby-header p {
+  font-size: 1.1rem;
+  color: var(--color-text-secondary);
+}
+
+/* Actions */
+.lobby-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.action-card {
+  background: var(--color-earth);
+  border: 1px solid var(--color-earth-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  text-align: center;
+  transition: all var(--transition-normal);
+}
+
+.action-card:hover {
+  border-color: var(--color-gold-dark);
+}
+
+.action-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto var(--space-lg);
+  color: var(--color-gold);
+}
+
+.action-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--color-text-primary);
+  margin-bottom: var(--space-sm);
+}
+
+.action-card p {
+  margin-bottom: var(--space-lg);
+  font-size: 0.95rem;
+}
+
+.join-form {
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.join-form .input {
+  flex: 1;
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 0.05em;
+}
+
+/* Error */
+.lobby-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-md);
+  background: rgba(139, 69, 19, 0.2);
+  border: 1px solid var(--color-terracotta);
+  border-radius: var(--radius-md);
+  color: var(--color-terracotta-light);
+  margin-bottom: var(--space-xl);
+}
+
+.error-close {
+  background: none;
+  border: none;
+  color: var(--color-terracotta-light);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0 var(--space-sm);
+}
+
+/* My Games */
+.my-games {
+  margin-bottom: var(--space-2xl);
+}
+
+.my-games h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-lg);
+}
+
+.no-games {
+  text-align: center;
+  padding: var(--space-2xl);
+  background: var(--color-earth);
+  border: 1px dashed var(--color-earth-light);
+  border-radius: var(--radius-lg);
+  color: var(--color-text-muted);
+}
+
+.games-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.game-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: var(--color-earth);
+  border: 1px solid var(--color-earth-light);
+  border-radius: var(--radius-md);
+  transition: border-color var(--transition-fast);
+}
+
+.game-card:hover {
+  border-color: var(--color-gold-dark);
+}
+
+.game-info {
+  flex: 1;
+}
+
+.game-token {
+  margin-bottom: var(--space-sm);
+}
+
+.token-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-right: var(--space-sm);
+}
+
+.game-token code {
+  font-family: monospace;
+  font-size: 0.9rem;
+  color: var(--color-gold);
+  background: var(--color-earth-light);
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-sm);
+}
+
+.game-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.badge {
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--radius-full);
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge-waiting {
+  background: rgba(212, 168, 75, 0.2);
+  color: var(--color-gold);
+}
+
+.badge-active {
+  background: rgba(45, 90, 61, 0.3);
+  color: var(--color-jungle-light);
+}
+
+.badge-finished {
+  background: rgba(139, 131, 120, 0.3);
+  color: var(--color-stone);
+}
+
+/* Player Stats */
+.player-stats h2 {
+  font-size: 1.5rem;
+  margin-bottom: var(--space-lg);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-md);
+}
+
+.stat-item {
+  background: var(--color-earth);
+  border: 1px solid var(--color-earth-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-lg);
+  text-align: center;
+}
+
+.stat-value {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--color-gold);
+  margin-bottom: var(--space-xs);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: var(--space-md);
+}
+
+.modal {
+  background: var(--color-earth);
+  border: 2px solid var(--color-gold-dark);
+  border-radius: var(--radius-lg);
+  padding: var(--space-2xl);
+  max-width: 400px;
+  width: 100%;
+  animation: slideUp var(--transition-normal) ease-out;
+}
+
+.modal h2 {
+  text-align: center;
+  margin-bottom: var(--space-sm);
+}
+
+.modal > p {
+  text-align: center;
+  margin-bottom: var(--space-xl);
+}
+
+.player-select {
+  display: flex;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+}
+
+.player-option {
+  flex: 1;
+  padding: var(--space-lg);
+  background: var(--color-earth-light);
+  border: 2px solid transparent;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  text-align: center;
+  transition: all var(--transition-fast);
+  color: var(--color-text-secondary);
+}
+
+.player-option:hover {
+  border-color: var(--color-gold-dark);
+}
+
+.player-option.active {
+  border-color: var(--color-gold);
+  background: rgba(212, 168, 75, 0.1);
+  color: var(--color-gold);
+}
+
+.player-count-big {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.modal-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: flex-end;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .game-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .game-card .btn {
+    width: 100%;
+  }
+}
+
